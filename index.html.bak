@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CenterParcs</title>
+	<meta name="description" content="My website for module CD4003.">
+	<meta name="Author" content="Marco Baldan">
+	<meta property="og:title" content="CenterParcs">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.centerparcs.co.uk">
+	<meta property="og:description" content="My website for module CD4003.">
+
+	<link rel="stylesheet" href="css/default.css?v=1.0">
+</head>
+<body>
+	<nav class="nav-menu">
+		<img src="images/logo.jpg" class="small" alt="logo">
+		<a href="pages/page4">Contact Us</a>
+		<a href="pages/page3">Discover</a>
+		<a href="pages/page2">Locations</a>
+		<a href="pages/page1">Book Now</a>
+	</nav>
+	
+<script src="js/scripts.js"></script>
+</body>
+</html>
