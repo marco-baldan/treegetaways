@@ -1,0 +1,450 @@
+@import url('../fonts/Inter-Regular.ttf');
+#page-container {
+	position: relative;
+	min-height: 100%;
+  }
+  
+#content-wrap {
+	padding-bottom: 150px;    /* Footer height */
+  }
+body {
+	font-family: 'inter', sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color:black;
+}
+.homepage-gallery {
+	width: 45%;
+}
+
+nav {
+	width: 100%;
+	position:sticky;
+	top: 0px;
+	margin: 0 auto;
+	background: #545e75;
+	padding: 8px 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+  nav ul {
+	list-style: none;
+	text-align: center;
+	font-size: 14px;
+}
+
+  nav ul li {
+	display: inline-block;
+}
+
+  nav ul li a {
+	display: block;
+	padding: 20px;
+	color: #fff;
+	font-weight: 650;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.fill ul li a:hover {
+	color: #3ef362;	
+	transition: 2.2s;
+}
+
+.logo {
+	width:150px; 
+	float: left;
+}
+.logo:hover {
+	opacity:0.3;
+}
+
+.small{
+	width:95px;
+}
+
+.fill .social {
+  text-align:center;
+  float: right;
+}
+
+.fill .social > a {
+  font-size:24px;
+  width:41px;
+  height:45px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:3px solid #a1e8af;
+  margin:0 8px;
+  color:#a1e8af;
+  opacity:0.75;
+}
+
+.social > a:hover {
+  opacity:0.3;
+}
+.banner {
+	background-image: url('../images/leaves.jpg') ;
+	width: 100%;
+	padding-top: 0px;
+	height: 425px;
+	opacity: 0.6;
+	color: White;
+	font-size: 50px;
+	text-align: center
+
+
+}    
+
+   .mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+	margin-top: 85px;
+}
+  .m_scroll_arrows
+  {
+	display: block;
+	width: 5px;
+	height: 5px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+	 
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	margin: 0 0 3px 4px;
+	
+	width: 50px;
+	height: 50px;
+  }
+  .one, .two
+  {
+	  -webkit-animation: mouse-scroll 1s infinite;
+	  -moz-animation: mouse-scroll 1s infinite;
+	  animation: mouse-scroll 1s infinite;
+	
+  }
+  .one
+  {
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-webkit-animation-direction: alternate;
+	
+	animation-direction: alternate;
+	animation-delay: alternate;
+  }
+  
+  .two
+  {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-webkit-animation-direction: alternate;
+	
+	animation-delay: .2s;
+	animation-direction: alternate;
+	
+	margin-top: -6px;
+  }
+ 
+
+  
+  @-webkit-keyframes mouse-scroll {
+  
+	0%   { opacity: 0;}
+	50%  { opacity: .5;}
+	100% { opacity: 1;}
+  }
+  @-moz-keyframes mouse-scroll {
+  
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+  }
+  @-o-keyframes mouse-scroll {
+  
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+  }
+  @keyframes mouse-scroll {
+  
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+  }
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 25%;
+	padding: 10px;
+  }
+   
+  /* Style the images inside the grid */
+  .column img {
+	opacity: 0.8;
+	cursor: pointer;
+  }
+  
+  .column img:hover {
+	opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .imgcontainer {
+	position: relative;
+	display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px
+	font-weight: 650;
+	color: white;
+	font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+  }
+.footer {
+  padding:15px 0;
+  background-color:#94c595;
+  color:#000;
+}
+
+.footer ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.4;
+  margin-bottom:0;
+}
+.footer .social{
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+.footer .social > a{
+	font-size:24px;
+	width:41px;
+	height:45px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:3px solid #000;
+	margin:0 8px;
+	color:#000;
+	opacity:0.75;
+
+}
+.footer .social > a:hover{
+	opacity: 0.3;
+}
+
+.footer li {
+  padding:0 5px;
+}
+
+.footer ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer ul a:hover {
+  opacity: 0.5;
+}
+.footer .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  margin-bottom:0;
+}
+.pagegap{
+	width:100%;
+	Height:28px;
+}
+.marquee {
+  width:100%;
+  color:red;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.pop-outin {
+  animation: 2s anim-popoutin ease ;
+  animation-timing-function: linear;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: White;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 white;
+  }
+  25% {
+    color: green;
+    transform: scale(1.25);
+    opacity: 1;
+    text-shadow: 3px 10px 5px white;
+  }
+  50% {
+    color: white;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 white;
+  }
+  
+.booking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0;
+  width:50%
+}
+
+.description .form{
+    width: 40%;
+    padding: 5%;
+}
+.description h1 {
+    text-transform: uppercase;
+    color: var(--font-light);
+    font-weight: 400;
+    margin-top: 0;
+}
+.description h1 strong{
+  font-weight: 700;
+  color: #000;
+}
+.description p {
+    color: var(--font-light);
+    font-size: 14px;
+    line-height: 22px;
+}
+.quote p {
+    font-style: italic;
+    padding: 2%;
+    border-left: 4px solid var(--primary-color);
+}
+.description ul {
+    padding-left: 16px;
+    list-style: circle;
+}
+.description ul li{
+    margin: 10px 0;
+}
+.form{
+  background: var(--primary-color);
+}
+.form form{
+  color: var(--font-light);
+    display: flex;
+  flex-wrap: wrap;
+}
+.inpbox.full {
+    width: 100%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inpbox span::before {
+    margin-left: 0;
+}
+.inpbox span {
+    padding-right: 10px;
+    border-right: 2px solid var(--font-light);
+}
+.form select{
+    border: 0;
+    width: 90%;
+    color: var(--font-light);
+}
+form input {
+    border: 0;
+    width: 74%;
+    color: var(--font-light);
+    padding: 0 4%;
+}
+.form select:focus, form input {
+  outline: none;
+}
+.inpbox {
+    width: 42%;
+    background: #fff;
+    padding: 3%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+.inrbox{
+  width: 33%;
+  color: #000;
+}
+.inrbox span{
+  padding-right: 10px;
+}
+.inrbox span {
+    border: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.form input[type="radio"] {
+    width: unset;
+}
+button.subt, button.rst{
+  padding: 2% 3%;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+}
+button.subt {
+    margin-right: 3%;
+    background: #fff;
+}
+button.rst {
+    background: #000;
+    color: #fff;
+}
